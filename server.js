@@ -51,9 +51,13 @@ app.set('view engine', 'ejs');
 // Middleware para manejar solicitudes POST
 app.use(express.urlencoded({ extended: true }));
 
+// Exporta la aplicación Express
+module.exports = app;
+
 // Ruta para la página de inicio
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  // Renderiza el archivo dashboard.ejs en la carpeta views
+  res.render('dashboard');
 });
 
 // Ruta y controlador para la página de inicio de sesión
