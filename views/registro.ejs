@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Tarjeta</title>
+  <link href="/public/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link href="/public/assets/css/register-update.css" rel="stylesheet">
+  <link href="/public/assets/css/styles.css" rel="stylesheet">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sidebars/">
+  <link href="/public/assets/css/sidebars.css" rel="stylesheet">
+  <script src="/public/assets/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3 d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+        <a href="/dashboard" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <img src="/public/assets/images/umg-small.png" width="40" height="40" alt="logo">
+          <span class="fs-4 ms-1">Banca en Linea</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <a href="/dashboard" class="nav-link text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+            </svg>
+            Dashboard
+          </a>
+          </li>
+          <li>
+            <a href="/registro" class="nav-link text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-credit-card-fill" viewBox="0 0 16 16">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1" />
+              </svg>
+              Crear tarjeta
+            </a>
+          </li>
+          <li>
+            <a href="/registro-usuario" class="nav-link text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-add" viewBox="0 0 16 16">
+                <path
+                  d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                <path
+                  d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z" />
+              </svg>
+              Crear usuario
+            </a>
+          </li>
+          <li>
+            <a href="/login" class="nav-link text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                <path fill-rule="evenodd"
+                  d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+              </svg>
+              Salir
+            </a>
+          </li>
+        </ul>
+        <!-- <hr>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            <strong>mdo</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div> -->
+      </div>
+      <div class="col-9 container">
+        <main>
+          <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="/public/assets/images/umg-small.png" alt="" width="75" height="75">
+            <h2>Registrar Tarjeta</h2>
+            <% if (messages.error) { %>
+              <div class="alert alert-danger d-none" role="alert">
+                <%= messages.error %>
+              </div>
+              <% } %>
+                <p class="lead">Esta pantalla permite ingresar la informacion para una nueva tarjeta.</p>
+          </div>
+          <div class="row g-12">
+            <div class="col-md-7 col-lg-12">
+              <hr class="my-4">
+              <form class="needs-validation" action="/registro" method="post">
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <label for="nombres" class="form-label">Nombres:</label>
+                    <input type="text" id="nombres" name="nombres" class="form-control" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="apellidos" class="form-label">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" class="form-control" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="numero-tarjeta" class="form-label">Numero tarjeta:</label>
+                    <input type="text" id="numero-tarjeta" name="numero_tarjeta" class="form-control" required
+                      oninput="formatCardNumber(this)">
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="saldo" class="form-label">Saldo:</label>
+                    <input type="text" id="saldo" name="saldo" class="form-control" required>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="fecha-registro" class="form-label">Fecha registro:</label>
+                    <input type="date" id="fecha-registro" name="fecha_registro" class="form-control" required>
+                  </div>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
+                  <a href="/dashboard" class="btn btn-danger btn-lg">Cancelar</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </main>
+
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+          <div class="row">
+            <div class="col-12 col-md text-center">
+              <img class="mb-2" src="/public/assets/images/umg-large.png" alt="" width="150" height="50">
+              <small class="d-block mb-3 text-body-secondary">© Banca en linea - 2024</small>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="/public/assets/js/bootstrap.min.js"></script>
+  <script src="/public/assets/js/register-update.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const alert = document.querySelector('.alert');
+
+  // Mostrar la alerta al cargar la página
+  if (alert.innerText.trim() !== '') {
+    alert.classList.remove('d-none');
+    // Ocultar la alerta después de 5 segundos
+    setTimeout(() => {
+      alert.classList.add('d-none');
+    }, 5000);
+  }
+});
+  </script>
+  
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+.btn-primary {
+    background-color: #0A3970 !important;
+    border-color: #0A3970 !important;
+}
+
+.btn-danger {
+    background-color: #A1252B !important;
+    border-color: #A1252B !important;
+}
+
+.table-danger {
+    --bs-table-color: #fff;
+    --bs-table-bg: #A1252B;
+    --bs-table-border-color: #A1252B;
+    --bs-table-striped-bg: #A1252B;
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg: #A1252B;
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: #A1252B;
+    --bs-table-hover-color: #fff;
+    color: var(--bs-table-color);
+    border-color: var(--bs-table-border-color);
+}
+
+.text-bg-primary, .border-primary{
+    /* background-color: #0A3970 !important; */
+    border-color: #0A3970 !important;
+}
+
+.card-header{
+    background-color: #0A3970 !important;
+    color: white;
+}

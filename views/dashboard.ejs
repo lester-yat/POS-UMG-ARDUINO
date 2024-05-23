@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="/public/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/assets/css/dashboard.css" rel="stylesheet">
+    <link href="/public/assets/css/styles.css" rel="stylesheet">
+    <script src="/public/assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sidebars/">
+    <link href="/public/assets/css/sidebars.css" rel="stylesheet">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+                <a href="/dashboard"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <img src="/public/assets/images/umg-small.png" width="40" height="40" alt="logo">
+                    <span class="fs-4 ms-1">Banca en Linea</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <a href="/dashboard" class="nav-link text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-house" viewBox="0 0 16 16">
+                            <path
+                                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                        </svg>
+                        Dashboard
+                    </a>
+                    </li>
+                    <li>
+                        <a href="/registro" class="nav-link text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-credit-card-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1" />
+                            </svg>
+                            Crear tarjeta
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/registro-usuario" class="nav-link text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-add" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                                <path
+                                    d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z" />
+                            </svg>
+                            Crear usuario
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/login" class="nav-link text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                            </svg>
+                            Salir
+                        </a>
+                    </li>
+                </ul>
+                <!-- <hr>
+                <div class="dropdown">
+                  <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>mdo</strong>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  </ul>
+                </div> -->
+            </div>
+            <div class="col-9 container py-3">
+                <header>
+                    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                        <h1 class="display-4 fw-normal text-body-emphasis">Inicio</h1>
+                        <a href="/registro" class="btn btn-primary btn-lg my-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" fill="currentColor" class="bi bi-credit-card"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                                <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                            </svg> Nueva Tarjeta</a>
+                    </div>
+                </header>
+                <hr class="my-4">
+                <main>
+                    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                        <h1 class="fw-normal text-body-emphasis">Tarjetas Registradas</h1>
+                        <p class="fs-5 text-body-secondary">En esta pantalla encontrara las tarjetas registradas en el
+                            sistema.</p>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                        <% if (clients && clients.length> 0) { %>
+                            <% clients.forEach(client=> { %>
+                                <div class="col">
+                                    <div class="card mb-4 rounded-3 shadow-sm border-primary"
+                                        data-id="<%= client.id %>">
+                                        <div class="card-header py-3 text-bg-primary border-primary">
+                                            <h4 class="my-0 fw-normal fw-bold">
+                                                <%= client.First_name %>
+                                                    <%= client.Last_name %>
+                                            </h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-unstyled mt-3 mb-4">
+                                                <li><span class="fw-bold">Numero tarjeta: </span><span>
+                                                        <%= client.UID_Card %>
+                                                    </span></li>
+                                                <li><span class="fw-bold">Saldo: </span><span class="saldo">
+                                                        <%= client.Balance %>
+                                                    </span></li>
+                                                <li><span class="fw-bold">Fecha de registro: </span><span class="fecha">
+                                                        <%= client.fecha_registro %>
+                                                    </span></li>
+                                            </ul>
+                                            <a href="/actualizar/<%= client.id %>"
+                                                class="btn btn-primary">Actualizar</a>
+                                            <button class="btn btn-danger delete-button" data-id="<%= client.id %>"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#exampleModalToggle<%= client.id %>">Eliminar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="exampleModalToggle<%= client.id %>" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Confirmacion
+                                                    de Eliminacion</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>¿Esta seguro de eliminar la tarjeta?</p>
+                                                <small>Al aceptar la eliminacion de la tarjeta, tambien se eliminaran
+                                                    los movimientos del registrados en el historial.</small>
+                                                <hr>
+                                                <p><strong>Datos de Tarjeta:</strong></p>
+                                                <small>
+                                                    <ul>
+                                                        <li class="text-start"><strong>Nombre:</strong>
+                                                            <%= client.First_name %>
+                                                                <%= client.Last_name %>
+                                                        </li>
+                                                        <li class="text-start"><strong>Numero:</strong>
+                                                            <%= client.UID_Card %>
+                                                        </li>
+                                                        <li class="text-start"><strong>Saldo:</strong> <span
+                                                                class="fila-saldo">
+                                                                <%= client.Balance %>
+                                                            </span></li>
+                                                    </ul>
+                                                </small>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-danger confirm-delete"
+                                                    data-id="<%= client.id %>">Confirmar</button>
+                                                <button type="button" class="btn btn-primary"
+                                                    data-bs-dismiss="modal">Cancelar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <% }); %>
+                                    <% } else { %>
+                                        <p>No hay clientes para mostrar.</p>
+                                        <% } %>
+                    </div>
+
+                    <hr class="my-4">
+                    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                        <h1 class=" fw-normal text-body-emphasis">Historial</h1>
+                        <p class="fs-5 text-body-secondary">En esta pantalla encontrara el historial de los movientos en
+                            tarjetas.</p>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table text-center table-striped">
+                            <thead class="table-danger">
+                                <tr>
+                                    <th style="width: 20%;">Nombre Tarjeta</th>
+                                    <th style="width: 20%;">Numero Tarjeta</th>
+                                    <th style="width: 20%;">Saldo</th>
+                                    <th style="width: 20%;">Fecha de Modificacion</th>
+                                    <th style="width: 20%;">Tipo de Movimiento</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% if (movements && movements.length> 0) { %>
+                                    <% movements.forEach(movement=> { %>
+                                        <tr>
+                                            <td>
+                                                <%= movement.nombre_tarjeta %>
+                                            </td>
+                                            <td>
+                                                <%= movement.UID_Card %>
+                                            </td>
+                                            <td class="fila-saldo">
+                                                <%= movement.saldo_movimiento %>
+                                            </td>
+                                            <td class="fecha">
+                                                <%= movement.fecha_registro %>
+                                            </td>
+                                            <td class="tipo">
+                                                <% if (movement.tipo_movimiento==1) { %>
+                                                    Deposito
+                                                    <% } else if (movement.tipo_movimiento==2) { %>
+                                                        Retiro
+                                                        <% } else if (movement.tipo_movimiento==3) { %>
+                                                            Tarjeta Inexistente
+                                                            <% } else if (movement.tipo_movimiento==4) { %>
+                                                                Dinero Insuficiente
+                                                                <% } %>
+                                            </td>
+                                        </tr>
+                                        <% }); %>
+                                            <% } else { %>
+                                                <tr>
+                                                    <td colspan="5">No hay movimientos para mostrar.</td>
+                                                </tr>
+                                                <% } %>
+                            </tbody>
+                        </table>
+                    </div>
+                </main>
+                <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                    <div class="row">
+                        <div class="col-12 col-md text-center">
+                            <img class="mb-2" src="/public/assets/images/umg-large.png" alt="" width="150" height="50">
+                            <small class="d-block mb-3 text-body-secondary">© Banca en linea - 2024</small>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="/public/assets/js/bootstrap.min.js"></script>
+    <script>
+        // Función para formatear el saldo como moneda con decimales
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('es-GT', { style: 'currency', currency: 'GTQ' }).format(amount);
+        }
+
+        // Función para formatear la fecha y hora
+        function formatDate(dateString) {
+            const dateOptions = { year: 'numeric', month: '2-digit', day: '2-digit' };
+            const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+
+            const date = new Date(dateString);
+            const formattedDate = date.toLocaleDateString('es-GT', dateOptions);
+            const formattedTime = date.toLocaleTimeString('es-GT', timeOptions);
+
+            return `${formattedDate} ${formattedTime}`;
+        }
+
+
+        // Obtener todos los elementos con la clase 'saldo' y actualizar su contenido con el saldo formateado
+        document.querySelectorAll('.saldo').forEach(function (element) {
+            const saldo = parseFloat(element.textContent);
+            element.textContent = formatCurrency(saldo);
+        });
+
+        // Obtener todos los elementos con la clase 'fecha' y actualizar su contenido con la fecha formateada
+        document.querySelectorAll('.fecha').forEach(function (element) {
+            const fecha = element.textContent;
+            element.textContent = formatDate(fecha);
+        });
+
+        // Obtener todos los elementos con la clase 'fila-saldo' y actualizar su contenido con el saldo formateado
+        document.querySelectorAll('.fila-saldo').forEach(function (element) {
+            const saldo = parseFloat(element.textContent);
+            element.textContent = formatCurrency(saldo);
+        });
+
+        // Función para manejar la eliminación exitosa
+        function handleDeleteSuccess(clientId) {
+            // Obtener el modal y ocultarlo
+            const modal = document.querySelector(`#exampleModalToggle${clientId}`);
+            const modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+
+            // Recargar la página después de un breve retraso
+            setTimeout(() => {
+                location.reload();
+            }, 1000);
+        }
+
+        // Manejar la eliminación de tarjetas usando AJAX
+        document.querySelectorAll('.confirm-delete').forEach(function (button) {
+            button.addEventListener('click', function () {
+                const clientId = this.getAttribute('data-id');
+                fetch(`/eliminar/${clientId}`, {
+                    method: 'DELETE',
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            handleDeleteSuccess(clientId); // Llamar a la función de éxito
+                        } else {
+                            alert('Error al eliminar la tarjeta');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error al eliminar la tarjeta:', error);
+                    });
+            });
+        });
+    </script>
+</body>
+
+</html>
