@@ -96,7 +96,7 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-3 d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+      <div class="col-3 d-flex flex-column flex-shrink-0 p-3 text-bg-primary" style="width: 280px;">
         <a href="/dashboard" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
           <img src="/public/assets/images/umg-small.png" width="40" height="40" alt="logo">
           <span class="fs-4 ms-1">Banca en Linea</span>
@@ -167,11 +167,6 @@
           <div class="py-5 text-center">
             <img class="d-block mx-auto mb-4" src="/public/assets/images/umg-small.png" alt="" width="75" height="75">
             <h2>Registrar Usuario</h2>
-              <% if (messages.error) { %>
-              <div class="alert alert-danger d-none" role="alert">
-                <%= messages.error %>
-              </div>
-              <% } %>
             <p class="lead">Esta pantalla permite registrar un usuario en el sistema.</p>
           </div>
           <div class="row g-12">
